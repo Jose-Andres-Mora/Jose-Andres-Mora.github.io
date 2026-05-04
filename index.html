@@ -1,48 +1,273 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>José Andrés Mora</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>José Andrés Mora</h1>
-<p>Computer Engineering Student - Co-op | Interested in Embedded Systems & Quantum Hardware</p>
-  <img src="images/headshot.jpg" width="300">
-<section>
-  <h2>Education</h2>
-  <p>BEng Computer Engineering, Concordia University</p>
-  <p>GPA: 3.87 / 4.30</p>
-  <p>Relevant coursework: Data Structures, Digital Systems, Circuit Analysis</p>
+<main class="page">
+
+<header class="hero">
+    <div>
+        <h1>José Andrés Mora</h1>
+        <p class="subtitle">Computer Engineering Student - Co-op | Interested in Embedded Systems &amp; Quantum Hardware</p>
+        <div class="hero-links">
+            <a href="mailto:your-email@example.com">Email</a>
+            <a href="https://github.com/Jose-Andres-Mora" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/joseandresmora" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+    </div>
+
+    <img class="headshot" src="images/headshot.jpg" alt="Headshot of José Andrés Mora">
+</header>
+
+<section class="section-card">
+    <h2>Education</h2>
+    <p><strong>BEng Computer Engineering</strong>, Concordia University</p>
+    <p><strong>GPA:</strong> 3.87 / 4.30</p>
+    <p><strong>Relevant coursework:</strong> Data Structures, Digital Systems, Circuit Analysis</p>
 </section>
 
-<h2>Projects</h2>
+<section class="projects-section">
+    <h2 class="section-heading">Projects</h2>
 
-<div class="project">
-    <h3>Cryostat Temperature Logger</h3>
-    <img src="images/cryostat.jpg" width="300">
-    <p>
-        Built a system using a Nucleo board to log voltage over time and analyze discharge behavior.
-    </p>
-</div>
+    <article class="project-card">
+        <div class="project-header">
+            <div class="project-intro">
+                <h3>Cryostat Temperature Logger</h3>
+                <p class="project-summary">
+                    Lab instrumentation and data-logging project focused on collecting temperature-related voltage readings over time, organizing the data into CSV files, and improving measurement reliability.
+                </p>
+            </div>
 
-<div class="project">
-    <h3>Battery Discharge Logger</h3>
-    <img src="images/battery.jpg" width="300">
-    <p>
-        Built a system using a Nucleo board to log voltage over time and analyze discharge behavior.
-    </p>
-    <a href="https://github.com/Jose-Andres-Mora/Battery-voltage-logger">View on GitHub</a>
-</div>
+            <div class="carousel project-carousel" aria-label="Cryostat Temperature Logger image carousel">
+                <div class="carousel-track">
+                    <figure class="carousel-slide is-active">
+                        <img src="images/cryostat.jpg" alt="Cryostat laboratory setup">
+                        <figcaption>Cryostat lab setup used while developing the temperature and voltage logging workflow.</figcaption>
+                    </figure>
+ 
+                    <figure class="carousel-slide">
+                        <img src="images/cryostat-setup.jpg" alt="DAQ wiring for cryostat logging">
+                        <figcaption>DAQ wiring and measurement setup used during signal validation.</figcaption>
+                    </figure>
+                    
+                </div>
 
-<div class="project">
-    <h3>Flashcard App</h3>
-    <img src="images/flashcard.jpg" width="300">
-    <p>
-        Built a system using a Nucleo board to log voltage over time and analyze discharge behavior.
-    </p>
-    <a href="https://project-0nzf2.vercel.app/">View on GitHub</a>
-</div>
+                <div class="carousel-controls">
+                    <button class="carousel-button carousel-prev" type="button" aria-label="Previous image">‹</button>
+                    <div class="carousel-dots" aria-label="Image selector"></div>
+                    <button class="carousel-button carousel-next" type="button" aria-label="Next image">›</button>
+                </div>
+            </div>
+        </div>
+
+        <table class="project-table">
+            <tbody>
+                <tr>
+                    <th scope="row">Purpose</th>
+                    <td>Create a practical workflow for recording cryostat or temperature-controller readings over time for later analysis.</td>
+                </tr>
+                <tr>
+                    <th scope="row">My role</th>
+                    <td>Worked on the measurement workflow, data logging structure, timestamp formatting, CSV output, and troubleshooting of read accuracy.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Tools / platforms</th>
+                    <td>LabVIEW, NI DAQmx, analog input configuration, CSV data logging, spreadsheet-based calibration tables.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Engineering concepts</th>
+                    <td>Signal acquisition, sampling, averaging, differential measurement, grounding, calibration, interpolation, and validation against external instruments.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Challenges</th>
+                    <td>Investigated voltage polarity issues, noisy readings, DAQ configuration, scale-table formatting, and whether measurements should be verified against a more reliable instrument.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Result</th>
+                    <td>Developed a clearer logging workflow with timestamped readings and a structure that can support calibration and later analysis.</td>
+                </tr>
+            </tbody>
+        </table>
+    </article>
+
+    <article class="project-card">
+        <div class="project-header">
+            <div class="project-intro">
+                <h3>Battery Discharge Logger</h3>
+                <p class="project-summary">
+                    Embedded/data-logging project using a Nucleo board to measure battery voltage over time and study discharge behavior.
+                </p>
+            </div>
+
+            <div class="carousel project-carousel" aria-label="Battery Discharge Logger image carousel">
+                <div class="carousel-track">
+                    <figure class="carousel-slide is-active">
+                        <img src="images/battery.jpg" alt="Battery discharge logger project setup">
+                        <figcaption>Battery voltage logging setup used to collect discharge readings over time.</figcaption>
+                    </figure>
+                    <!-- Example extra slide:
+                    <figure class="carousel-slide">
+                        <img src="images/battery-plot.jpg" alt="Battery voltage discharge plot">
+                        <figcaption>Voltage-over-time plot generated from the recorded battery readings.</figcaption>
+                    </figure>
+                    -->
+                </div>
+
+                <div class="carousel-controls">
+                    <button class="carousel-button carousel-prev" type="button" aria-label="Previous image">‹</button>
+                    <div class="carousel-dots" aria-label="Image selector"></div>
+                    <button class="carousel-button carousel-next" type="button" aria-label="Next image">›</button>
+                </div>
+            </div>
+        </div>
+
+        <table class="project-table">
+            <tbody>
+                <tr>
+                    <th scope="row">Purpose</th>
+                    <td>Record battery voltage over time and produce data that can be used to understand discharge behavior.</td>
+                </tr>
+                <tr>
+                    <th scope="row">My role</th>
+                    <td>Built the logging workflow, organized the recorded voltage data, and prepared the project for documentation on GitHub.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Tools / platforms</th>
+                    <td>Nucleo development board, embedded programming workflow, Git, GitHub, CSV/data analysis workflow.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Engineering concepts</th>
+                    <td>Analog voltage measurement, sampling over time, data logging, sensor/board accuracy, and experimental validation.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Challenges</th>
+                    <td>Choosing useful sampling intervals, keeping the recorded data organized, and thinking critically about board measurement accuracy.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Result</th>
+                    <td>Created a working project repository that documents the voltage-logging idea and can be expanded with plots, calibration notes, and test results.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="project-links">
+            <a href="https://github.com/Jose-Andres-Mora/Battery-voltage-logger" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+        </div>
+    </article>
+
+    <article class="project-card">
+        <div class="project-header">
+            <div class="project-intro">
+                <h3>Flashcard App</h3>
+                <p class="project-summary">
+                    Web application project for organizing and reviewing study flashcards, built as a practical tool for course review and exam preparation.
+                </p>
+            </div>
+
+            <div class="carousel project-carousel" aria-label="Flashcard App image carousel">
+                <div class="carousel-track">
+                    <figure class="carousel-slide is-active">
+                        <img src="images/flashcards.jpg" alt="Flashcard app interface">
+                        <figcaption>Flashcard app interface used for organizing course review cards and testing the deployed prototype.</figcaption>
+                    </figure>
+                    <!-- Example extra slide:
+                    <figure class="carousel-slide">
+                        <img src="images/flashcards-deck.jpg" alt="Flashcard deck view">
+                        <figcaption>Deck view showing course-based flashcard organization.</figcaption>
+                    </figure>
+                    -->
+                </div>
+
+                <div class="carousel-controls">
+                    <button class="carousel-button carousel-prev" type="button" aria-label="Previous image">‹</button>
+                    <div class="carousel-dots" aria-label="Image selector"></div>
+                    <button class="carousel-button carousel-next" type="button" aria-label="Next image">›</button>
+                </div>
+            </div>
+        </div>
+
+        <table class="project-table">
+            <tbody>
+                <tr>
+                    <th scope="row">Purpose</th>
+                    <td>Build a study tool that can store, organize, and review flashcards for technical course material.</td>
+                </tr>
+                <tr>
+                    <th scope="row">My role</th>
+                    <td>Developed the app structure, worked through deployment issues, and organized course-based flashcard data for testing.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Tools / platforms</th>
+                    <td>Next.js, React, TypeScript, Git, GitHub, Vercel, Supabase/environment variables.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Engineering concepts</th>
+                    <td>Frontend design, application state, data organization, deployment, environment configuration, and debugging production errors.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Challenges</th>
+                    <td>Resolved deployment configuration issues, environment variable setup, project routing, and repository-to-hosting workflow problems.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Result</th>
+                    <td>Deployed a usable web app prototype that can be shared with testers and expanded into a stronger study platform.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="project-links">
+            <a href="https://project-0nzf2.vercel.app/" target="_blank" rel="noopener noreferrer">Access Flashcard App</a>
+        </div>
+    </article>
+</section>
+
+</main>
+
+<script>
+document.querySelectorAll('.carousel').forEach((carousel) => {
+    const slides = Array.from(carousel.querySelectorAll('.carousel-slide'));
+    const previousButton = carousel.querySelector('.carousel-prev');
+    const nextButton = carousel.querySelector('.carousel-next');
+    const dotsContainer = carousel.querySelector('.carousel-dots');
+    let activeIndex = 0;
+
+    function showSlide(index) {
+        activeIndex = (index + slides.length) % slides.length;
+
+        slides.forEach((slide, slideIndex) => {
+            slide.classList.toggle('is-active', slideIndex === activeIndex);
+        });
+
+        dotsContainer.querySelectorAll('button').forEach((dot, dotIndex) => {
+            dot.classList.toggle('is-active', dotIndex === activeIndex);
+            dot.setAttribute('aria-current', dotIndex === activeIndex ? 'true' : 'false');
+        });
+    }
+
+    slides.forEach((_, index) => {
+        const dot = document.createElement('button');
+        dot.type = 'button';
+        dot.className = 'carousel-dot';
+        dot.setAttribute('aria-label', `Show image ${index + 1}`);
+        dot.addEventListener('click', () => showSlide(index));
+        dotsContainer.appendChild(dot);
+    });
+
+    previousButton.addEventListener('click', () => showSlide(activeIndex - 1));
+    nextButton.addEventListener('click', () => showSlide(activeIndex + 1));
+
+    if (slides.length <= 1) {
+        carousel.classList.add('single-slide');
+    }
+
+    showSlide(0);
+});
+</script>
 
 </body>
 </html>
