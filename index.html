@@ -15,7 +15,7 @@
         <h1>José Andrés Mora</h1>
         <p class="subtitle">Computer Engineering Student - Co-op | Interested in Embedded Systems &amp; Quantum Hardware</p>
         <div class="hero-links">
-            <a href="mailto:your-email@example.com">Email</a>
+            <a href="mailto:jmora.a@proton.me">Email</a>
             <a href="https://github.com/Jose-Andres-Mora" target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="https://www.linkedin.com/in/joseandresmora" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
@@ -38,23 +38,31 @@
         <div class="project-header">
             <div class="project-intro">
                 <h3>Cryostat Temperature Logger</h3>
+                <p class="project-meta">
+                    <span>Research/Volunteer Project</span>
+                    <span>Sept 2025 – Present</span>
+                </p>
                 <p class="project-summary">
-                    Lab instrumentation and data-logging project focused on collecting temperature-related voltage readings over time, organizing the data into CSV files, and improving measurement reliability.
+                    Self-initiated lab instrumentation project focused on collecting temperature-related voltage readings over time, organizing the data into CSV files, and improving measurement reliability.
                 </p>
             </div>
 
             <div class="carousel project-carousel" aria-label="Cryostat Temperature Logger image carousel">
                 <div class="carousel-track">
                     <figure class="carousel-slide is-active">
-                        <img src="images/cryostat.jpg" alt="Cryostat laboratory setup">
+                        <button class="carousel-image-button" type="button" aria-label="Open larger image: Cryostat laboratory setup">
+                            <img src="images/cryostat.jpg" alt="Cryostat laboratory setup">
+                        </button>
                         <figcaption>Cryostat lab setup used while developing the temperature and voltage logging workflow.</figcaption>
                     </figure>
- 
+                    <!-- To add another image, duplicate this figure and update the src, alt, and caption.
                     <figure class="carousel-slide">
-                        <img src="images/cryostat-setup.jpg" alt="DAQ wiring for cryostat logging">
+                        <button class="carousel-image-button" type="button" aria-label="Open larger image: DAQ wiring for cryostat logging">
+                            <img src="images/cryostat-setup.jpg" alt="DAQ wiring for cryostat logging">
+                        </button>
                         <figcaption>DAQ wiring and measurement setup used during signal validation.</figcaption>
                     </figure>
-                    
+                    -->
                 </div>
 
                 <div class="carousel-controls">
@@ -68,12 +76,16 @@
         <table class="project-table">
             <tbody>
                 <tr>
+                    <th scope="row">Context</th>
+                    <td>Volunteer research project supervised by Professor Valter Zazubovits in the Department of Physics at Concordia University.</td>
+                </tr>
+                <tr>
                     <th scope="row">Purpose</th>
                     <td>Create a practical workflow for recording cryostat or temperature-controller readings over time for later analysis.</td>
                 </tr>
                 <tr>
                     <th scope="row">My role</th>
-                    <td>Worked on the measurement workflow, data logging structure, timestamp formatting, CSV output, and troubleshooting of read accuracy.</td>
+                    <td>Reached out to begin the volunteer project, helped shape the technical scope, and worked on the measurement workflow, data logging structure, timestamp formatting, CSV output, sample averaging, and troubleshooting of read accuracy.</td>
                 </tr>
                 <tr>
                     <th scope="row">Tools / platforms</th>
@@ -99,20 +111,28 @@
         <div class="project-header">
             <div class="project-intro">
                 <h3>Battery Discharge Logger</h3>
+                <p class="project-meta">
+                    <span>Academic Team Project</span>
+                    <span>Mar 2026 – Apr 2026</span>
+                </p>
                 <p class="project-summary">
-                    Embedded/data-logging project using a Nucleo board to measure battery voltage over time and study discharge behavior.
+                    Team probability/statistics and engineering measurement project using a Nucleo board to measure battery voltage over time, estimate delivered charge, and analyze discharge behavior.
                 </p>
             </div>
 
             <div class="carousel project-carousel" aria-label="Battery Discharge Logger image carousel">
                 <div class="carousel-track">
                     <figure class="carousel-slide is-active">
-                        <img src="images/battery.jpg" alt="Battery discharge logger project setup">
+                        <button class="carousel-image-button" type="button" aria-label="Open larger image: Battery discharge logger project setup">
+                            <img src="images/battery.jpg" alt="Battery discharge logger project setup">
+                        </button>
                         <figcaption>Battery voltage logging setup used to collect discharge readings over time.</figcaption>
                     </figure>
                     <!-- Example extra slide:
                     <figure class="carousel-slide">
-                        <img src="images/battery-plot.jpg" alt="Battery voltage discharge plot">
+                        <button class="carousel-image-button" type="button" aria-label="Open larger image: Battery voltage discharge plot">
+                            <img src="images/battery-plot.jpg" alt="Battery voltage discharge plot">
+                        </button>
                         <figcaption>Voltage-over-time plot generated from the recorded battery readings.</figcaption>
                     </figure>
                     -->
@@ -129,28 +149,32 @@
         <table class="project-table">
             <tbody>
                 <tr>
+                    <th scope="row">Context</th>
+                    <td>Academic team project for probability and statistics; my main contribution was the complete experimental setup and data-collection workflow.</td>
+                </tr>
+                <tr>
                     <th scope="row">Purpose</th>
-                    <td>Record battery voltage over time and produce data that can be used to understand discharge behavior.</td>
+                    <td>Measure AAA battery discharge under a constant 33 Ω resistive load and produce data for estimating delivered charge/capacity and performing statistical analysis.</td>
                 </tr>
                 <tr>
                     <th scope="row">My role</th>
-                    <td>Built the logging workflow, organized the recorded voltage data, and prepared the project for documentation on GitHub.</td>
+                    <td>Set up the experiment, configured the Nucleo-based voltage logging workflow, collected the readings, structured the CSV data, converted timestamps to elapsed hours, and prepared plots/data for team analysis.</td>
                 </tr>
                 <tr>
                     <th scope="row">Tools / platforms</th>
-                    <td>Nucleo development board, embedded programming workflow, Git, GitHub, CSV/data analysis workflow.</td>
+                    <td>Nucleo development board, Python, CSV data logging, Git, GitHub, resistive-load discharge testing.</td>
                 </tr>
                 <tr>
                     <th scope="row">Engineering concepts</th>
-                    <td>Analog voltage measurement, sampling over time, data logging, sensor/board accuracy, and experimental validation.</td>
+                    <td>Analog voltage measurement, sampling over time, numerical integration, delivered capacity estimation, experimental validation, sample mean, sample variance, and comparison against an expected mean charge.</td>
                 </tr>
                 <tr>
                     <th scope="row">Challenges</th>
-                    <td>Choosing useful sampling intervals, keeping the recorded data organized, and thinking critically about board measurement accuracy.</td>
+                    <td>Improved experimental reliability by revising the setup after observing unstable readings during faster discharge conditions.</td>
                 </tr>
                 <tr>
                     <th scope="row">Result</th>
-                    <td>Created a working project repository that documents the voltage-logging idea and can be expanded with plots, calibration notes, and test results.</td>
+                    <td>Produced a usable voltage-discharge dataset and analysis workflow that supported team calculations of mean charge, sample variance, expected-mean comparison, and battery-discharge interpretation.</td>
                 </tr>
             </tbody>
         </table>
@@ -164,20 +188,28 @@
         <div class="project-header">
             <div class="project-intro">
                 <h3>Flashcard App</h3>
+                <p class="project-meta">
+                    <span>Self-started Personal Software Project</span>
+                    <span>Apr 2026 – Present</span>
+                </p>
                 <p class="project-summary">
-                    Web application project for organizing and reviewing study flashcards, built as a practical tool for course review and exam preparation.
+                    Self-started web application project for organizing and reviewing study flashcards, built as a practical tool for course review and exam preparation.
                 </p>
             </div>
 
             <div class="carousel project-carousel" aria-label="Flashcard App image carousel">
                 <div class="carousel-track">
                     <figure class="carousel-slide is-active">
-                        <img src="images/flashcards.jpg" alt="Flashcard app interface">
+                        <button class="carousel-image-button" type="button" aria-label="Open larger image: Flashcard app interface">
+                            <img src="images/flashcards.jpg" alt="Flashcard app interface">
+                        </button>
                         <figcaption>Flashcard app interface used for organizing course review cards and testing the deployed prototype.</figcaption>
                     </figure>
                     <!-- Example extra slide:
                     <figure class="carousel-slide">
-                        <img src="images/flashcards-deck.jpg" alt="Flashcard deck view">
+                        <button class="carousel-image-button" type="button" aria-label="Open larger image: Flashcard deck view">
+                            <img src="images/flashcards-deck.jpg" alt="Flashcard deck view">
+                        </button>
                         <figcaption>Deck view showing course-based flashcard organization.</figcaption>
                     </figure>
                     -->
@@ -194,12 +226,16 @@
         <table class="project-table">
             <tbody>
                 <tr>
+                    <th scope="row">Context</th>
+                    <td>Self-started personal software project created to support structured study, course review, and exam preparation.</td>
+                </tr>
+                <tr>
                     <th scope="row">Purpose</th>
                     <td>Build a study tool that can store, organize, and review flashcards for technical course material.</td>
                 </tr>
                 <tr>
                     <th scope="row">My role</th>
-                    <td>Developed the app structure, worked through deployment issues, and organized course-based flashcard data for testing.</td>
+                    <td>Initiated the project independently, developed the app structure, worked through deployment issues, and organized course-based flashcard data for testing.</td>
                 </tr>
                 <tr>
                     <th scope="row">Tools / platforms</th>
@@ -228,6 +264,25 @@
 
 </main>
 
+<div class="lightbox" id="image-lightbox" hidden>
+    <div class="lightbox-backdrop" data-lightbox-close></div>
+
+    <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-label="Expanded project image carousel">
+        <button class="lightbox-close" type="button" aria-label="Close expanded image">×</button>
+
+        <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous image">‹</button>
+
+        <figure class="lightbox-figure">
+            <img class="lightbox-image" src="" alt="">
+            <figcaption class="lightbox-caption"></figcaption>
+        </figure>
+
+        <button class="lightbox-nav lightbox-next" type="button" aria-label="Next image">›</button>
+
+        <p class="lightbox-counter" aria-live="polite"></p>
+    </div>
+</div>
+
 <script>
 document.querySelectorAll('.carousel').forEach((carousel) => {
     const slides = Array.from(carousel.querySelectorAll('.carousel-slide'));
@@ -249,13 +304,18 @@ document.querySelectorAll('.carousel').forEach((carousel) => {
         });
     }
 
-    slides.forEach((_, index) => {
+    slides.forEach((slide, index) => {
         const dot = document.createElement('button');
         dot.type = 'button';
         dot.className = 'carousel-dot';
         dot.setAttribute('aria-label', `Show image ${index + 1}`);
         dot.addEventListener('click', () => showSlide(index));
         dotsContainer.appendChild(dot);
+
+        const imageButton = slide.querySelector('.carousel-image-button');
+        if (imageButton) {
+            imageButton.addEventListener('click', () => openLightbox(carousel, index));
+        }
     });
 
     previousButton.addEventListener('click', () => showSlide(activeIndex - 1));
@@ -266,6 +326,87 @@ document.querySelectorAll('.carousel').forEach((carousel) => {
     }
 
     showSlide(0);
+});
+
+const lightbox = document.getElementById('image-lightbox');
+const lightboxImage = lightbox.querySelector('.lightbox-image');
+const lightboxCaption = lightbox.querySelector('.lightbox-caption');
+const lightboxCounter = lightbox.querySelector('.lightbox-counter');
+const lightboxCloseButton = lightbox.querySelector('.lightbox-close');
+const lightboxPreviousButton = lightbox.querySelector('.lightbox-prev');
+const lightboxNextButton = lightbox.querySelector('.lightbox-next');
+let lightboxSlides = [];
+let lightboxIndex = 0;
+let lastFocusedElement = null;
+
+function openLightbox(carousel, index) {
+    lightboxSlides = Array.from(carousel.querySelectorAll('.carousel-slide')).map((slide) => {
+        const image = slide.querySelector('img');
+        const caption = slide.querySelector('figcaption');
+
+        return {
+            src: image.getAttribute('src'),
+            alt: image.getAttribute('alt') || '',
+            caption: caption ? caption.textContent.trim() : ''
+        };
+    });
+
+    lightboxIndex = index;
+    lastFocusedElement = document.activeElement;
+    updateLightbox();
+
+    lightbox.hidden = false;
+    document.body.classList.add('lightbox-open');
+    lightboxCloseButton.focus();
+}
+
+function updateLightbox() {
+    const slide = lightboxSlides[lightboxIndex];
+    lightboxImage.src = slide.src;
+    lightboxImage.alt = slide.alt;
+    lightboxCaption.textContent = slide.caption;
+    lightboxCounter.textContent = `${lightboxIndex + 1} / ${lightboxSlides.length}`;
+
+    const hasMultipleSlides = lightboxSlides.length > 1;
+    lightboxPreviousButton.hidden = !hasMultipleSlides;
+    lightboxNextButton.hidden = !hasMultipleSlides;
+    lightboxCounter.hidden = !hasMultipleSlides;
+}
+
+function showLightboxSlide(index) {
+    lightboxIndex = (index + lightboxSlides.length) % lightboxSlides.length;
+    updateLightbox();
+}
+
+function closeLightbox() {
+    lightbox.hidden = true;
+    document.body.classList.remove('lightbox-open');
+    lightboxImage.src = '';
+
+    if (lastFocusedElement) {
+        lastFocusedElement.focus();
+    }
+}
+
+lightboxPreviousButton.addEventListener('click', () => showLightboxSlide(lightboxIndex - 1));
+lightboxNextButton.addEventListener('click', () => showLightboxSlide(lightboxIndex + 1));
+lightboxCloseButton.addEventListener('click', closeLightbox);
+lightbox.querySelector('[data-lightbox-close]').addEventListener('click', closeLightbox);
+
+window.addEventListener('keydown', (event) => {
+    if (lightbox.hidden) return;
+
+    if (event.key === 'Escape') {
+        closeLightbox();
+    }
+
+    if (event.key === 'ArrowLeft' && lightboxSlides.length > 1) {
+        showLightboxSlide(lightboxIndex - 1);
+    }
+
+    if (event.key === 'ArrowRight' && lightboxSlides.length > 1) {
+        showLightboxSlide(lightboxIndex + 1);
+    }
 });
 </script>
 
